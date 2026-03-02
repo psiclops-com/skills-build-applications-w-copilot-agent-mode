@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Teams = () => {
   const [teams, setTeams] = useState([]);
-  const endpoint = `https://${window.location.hostname.replace('-3000', '-8000')}.app.github.dev/api/teams/`;
+  const endpoint = 'https://urban-robot-jjjj7x64vxx3vg9-8000.app.github.dev/api/teams/';
 
   useEffect(() => {
     fetch(endpoint)
