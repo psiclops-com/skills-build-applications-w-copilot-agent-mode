@@ -1,3 +1,9 @@
+# Django REST framework settings for anonymous access
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny',
+    ],
+}
 """
 Django settings for octofit_tracker project.
 
