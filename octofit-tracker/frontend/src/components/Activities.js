@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Activities = () => {
   const [activities, setActivities] = useState([]);
-  const endpoint = '/api/activities/';
+  const endpoint = `https://${window.location.hostname.replace('-3000', '-8000')}.app.github.dev/api/activities/`;
 
   useEffect(() => {
     fetch(endpoint)

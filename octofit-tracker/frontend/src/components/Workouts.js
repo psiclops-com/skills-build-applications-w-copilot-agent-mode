@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Workouts = () => {
   const [workouts, setWorkouts] = useState([]);
-  const endpoint = '/api/workouts/';
+  const endpoint = `https://${window.location.hostname.replace('-3000', '-8000')}.app.github.dev/api/workouts/`;
 
   useEffect(() => {
     fetch(endpoint)

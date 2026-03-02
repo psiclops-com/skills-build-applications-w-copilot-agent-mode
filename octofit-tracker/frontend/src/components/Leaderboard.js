@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Leaderboard = () => {
   const [leaders, setLeaders] = useState([]);
-  const endpoint = '/api/leaderboard/';
+  const endpoint = `https://${window.location.hostname.replace('-3000', '-8000')}.app.github.dev/api/leaderboard/`;
 
   useEffect(() => {
     fetch(endpoint)
